@@ -1,3 +1,11 @@
+:root {
+  --black: black;
+  --white: #E8E8E8;
+  --accent1: #5d0cff;
+  --charcoal: #36454F;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,188 +15,182 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--charcoal);
 }
 
-.bucket-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 800px;
-  min-height: 600px;
-  background: black;
-  text-align: center;
-  margin: 32px auto;
-  border-radius: 20px;
-  padding-bottom: 32px;
-}
-
-h1 {
-  margin: 32px 0;
-  color: #fff;
-  font-size: 24px;
-}
-
-h3 {
-  margin: auto;
-  color: rgb(66, 171, 231);
+/* a {
+  padding: 6px;
   font-size: 20px;
+  color: var(--charcoal);
+  border: black 2px solid;
+  text-decoration: none;
+} */
+
+.nav-links a {
+  padding: 6px;
+  font-size: 20px;
+  color: var(--charcoal);
+  border: black 2px solid;
+  text-decoration: none;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
+.nav-links a.active {
+  text-decoration: underline;
+  color: var(--white); /* Optional: Change color for active link */
 }
 
-.bucket-form {
-  margin-bottom: 32px;
-}
-
-.bucket-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px;
-  border: 2px solid #5d0cff;
-  outline: none;
-  width: 320px;
-  background: transparent;
-  color: #fff;
-}
-
-.bucket-input::placeholder {
-  color: #e2e2e2;
-}
-
-.bucket-button {
-  padding: 16px;
-  border: none;
-  border-radius: 4px;
+a:hover {
+  background-color: var(--accent1);
   cursor: pointer;
-  outline: none;
-  background: #5d0cff;
-  color: #fff;
-  text-transform: capitalize;
 }
 
-.bucket-input.edit {
-  border: 2px solid #149fff;
+/* .fixed-class {
+  position: absolute;
+} */
+
+#contact {
+  text-decoration: none;
+  color: grey;
 }
 
-.bucket-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-  padding: 16px 22px;
+#about-me {
+  text-decoration: none;
+  color: grey;
 }
 
-.bucket-container {
+#resume {
+  text-decoration: none;
+  color: grey;
+}
+
+#portfolio {
+  text-decoration: none;
+  color: grey;
+}
+
+#contact:hover {
+  text-decoration: none;
+  color: var(--whtie);
+}
+
+#about-me:hover {
+  text-decoration: none;
+  color: var(--whtie);
+}
+
+#resume:hover {
+  text-decoration: none;
+  color: var(--whtie);
+}
+
+#portfolio:hover {
+  text-decoration: none;
+  color: var(--whtie);
+}
+
+.nav {
+  height: 8vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
-  position: relative;
-}
-
-.bucket-row {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  padding: 16px;
-  border-radius: 5px;
-  width: 90%;
+  background-color: black;
 }
 
-.low {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-}
-
-.medium {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
-}
-
-.high {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-}
-
-.icons {
+.nav-left {
+  margin-left: 20px;
+  margin-right: auto;
   display: flex;
   align-items: center;
-  font-size: 24px;
-  cursor: pointer;
+  flex-direction: row;
+  font-size: .5rem;
 }
 
-.delete-icon {
-  margin-right: 5px;
-  color: #fff;
+
+.nav-links {
+  margin-right: 20px;
+  margin-left: auto;
 }
 
-.edit-icon {
-  color: #fff;
+.footer {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  background-color: black;
 }
 
-/* Dropdown menu */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--white);
+  min-height: 700px;
+  min-width: 85vw;
+  margin: 20px;
+  border: black 2px solid;
+}
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #ec5700;
+.card p {
+  width: 57vw;
+}
+
+.card div {
+  padding: 40px;
+}
+
+.card h2 {
+  font-size: 3rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin: 20px; 
+}
+
+.project-link:hover {
+  color: var(--accent1)
+}
+
+.project-description {
+  background-color: #E8E8E8;
+}
+
+.project-status {
+  background-color: white;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  color: white;
-  padding: 16px;
-  margin: 10px;
-  /* font-size: 16px; */
-  border: none;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.error {
+  border-color: red;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 215px;
-  border-radius: 4px;
-  padding: 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.error-text {
+  color: red;
+  font-size: 0.875em;
 }
 
-/* Links inside the dropdown */
-.dropdown-content p {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content p:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #5d0cff;
+textarea.form-input {
+  height: 150px; /* Make the message input box taller */
+  resize: vertical; /* Allow vertical resizing */
 }

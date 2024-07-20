@@ -29,7 +29,7 @@ Testing is an essential part of maintaining code quality and ensuring that our p
 As of right now we dont have any testing features for this project but we plan to add more features and APIs to allow a wider range of markdown generaton. We also plan to add more commands such as /help. <!-- leave this blank -->
 
 ## Links
-
+[live site](https://djinjones.github.io/epic-portfolio/)
 
 ## API
 N/A

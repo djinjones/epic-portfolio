@@ -194,3 +194,24 @@ textarea.form-input {
   height: 150px; /* Make the message input box taller */
   resize: vertical; /* Allow vertical resizing */
 }
+
+/* Resume.css */
+.resume-link {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.2em;
+  margin-left: 8px;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+
+.logo-link img {
+  margin: 10px;
+  min-width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+

@@ -42,7 +42,7 @@ function Portfolio() {
         link: "https://github.com/djinjones/circular-polyrythm",
         description: "simple webstie that allows users to speed up and slow down a polyrythm",
         status: "inProgress",
-        source: "./src/assets/circularpolyrythm.png"
+        source: "./circularpolyrythm.png"
        }
 
     ];

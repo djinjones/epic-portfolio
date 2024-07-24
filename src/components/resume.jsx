@@ -6,7 +6,7 @@ function Resume() {
             <h2>
                 Resume
                 <a
-                    href='./src/assets/exampleresume.png' // Path to your resume file
+                    href='https://msnlabs.com/img/resume-sample.pdf' // Path to your resume file
                     download
                     className='resume-link'
                 >
